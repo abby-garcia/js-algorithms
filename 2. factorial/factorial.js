@@ -5,7 +5,7 @@ For the test cases, the range will be between 1 and 18.
 
 
 function FirstFactorial(num) {
-	function factorial(n) {
+	function factorial(n) {                         
 		if(n === 0){
 			return 1;
 		}
