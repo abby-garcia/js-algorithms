@@ -10,8 +10,9 @@ and finally return this modified string.
 
 
 function LetterChanges(str){
-
-
+	var converted = str.replace(/[a-z]/gi, function(char) { 
+    return (char === 'z' || char === 'Z') ? 'a' : String.fromCharCode(char.charCodeAt() + 1);
+  });
 
 
 
