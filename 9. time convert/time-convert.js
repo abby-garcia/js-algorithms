@@ -18,7 +18,7 @@ function TimeConvert(num){
 
 }
 
-TimeConvert(num);
+TimeConvert(63);
 
 
 // have this set up - hour + ":" + minutes
