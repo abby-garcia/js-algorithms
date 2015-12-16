@@ -9,27 +9,3 @@ Then capitalize every vowel in this new string (a, e, i, o, u)
 and finally return this modified string. 
 
 
-function LetterChanges(str){
-	var converted = str.replace(/[a-z]/gi, function(char) { 
-    return (char === 'z' || char === 'Z') ? 'a' : String.fromCharCode(char.charCodeAt() + 1);
-  });
-
-	var capitalized = converted.replace(/a|e|i|o|u/gi, function(vowel) { 
-    return vowel.toUpperCase();
-  });
-return capitalized;
-         
-
-
-
-}
-
-
-
-LetterChanges("Hello, I am going to change dramatically.")
-
-
-// Things to note:
-// .fromCharCode() - converts unicode values into characters
-// .charCodeAt - returnes the unicode of the character at the specified index in a string
-// .toUpperCase() - converts strings to uppercase
