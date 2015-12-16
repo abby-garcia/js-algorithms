@@ -4,23 +4,17 @@ letter of each word.
 Words will be separated by only one space. 
 
 
+
 function LetterCapitalize(str){
-	return str.replace(/\b[a-z]/gi,function(char){
-		return char.toUpperCase();
-	});
-
-	for (var i = 0; i < words.length; i++) {
-    words[i] = words[i].substring(0,1).toUpperCase() + words[i].substring(1);
-  }
-
-  // return the array of words joined into a string
-  return words.join(" ");
-         
+    var words = str.split(" ");
+    
+    for(var i = 0; i < words.length; i++){
+        words[i] = words[i].substring(0,1).toUpperCase() + words[i].substring(1);
+    }
+    
+    return words.join(" ");
+    
+    
 }
 
-}
-
-LetterCapitalize("Hello, is it me you're looking for?");
-
-
-// Things to remember - .toUpperCase
+LetterCapitalize("star wars should be a good movie");
