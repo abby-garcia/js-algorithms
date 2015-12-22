@@ -6,19 +6,21 @@ of vowels the string contains
 (ie. "All cows eat grass" would return 5). 
 Do not count y as a vowel for this challenge. 
 
+function VowelCount(str) {
+	var counter = 0;
+	var vowel = ["a", "e", "i", "o", "u"];
 
-function VowelCount(str) { 
-  var vowels = "aeiouAEIOU";
-  var count = 0;
-  // code goes here 
-  for (var i = 0; i < str.length; i++) {
-    if (vowels.indexOf(str[i]) != -1) {
-      count += 1;
-    }
-  }
-  return count;       
+	for(var i = 0; i < str.length; i++){
+		if(vowel.indexOf(str[i]) !== -1){
+			counter++;
+		}
+	}
+
+	return counter;
+
 }
-   
-// keep this function call here 
-// to see how to enter arguments in JavaScript scroll down
-print(VowelCount(readline())); 
+
+
+VowelCount("Helloooo Amardio");
+
+//review line 14. 
