@@ -1,23 +1,46 @@
-// Step By Step
+// Using the JavaScript language, have the function ExOh(str) 
+// take the str parameter being passed and return 
+// the string true if there is an equal
+// number of x's and o's, otherwise return
+// the string false. Only these two letters will be entered
+// in the string, no punctuation or numbers. 
+// For example: if str is "xooxxxxooxo" then the output 
+// should return false because there are 6 x's and 5 o's. 
+
+
 function ExOh(str) {
+    var letterX = str.split("x").length;
+    var letterO = str.split("o").length;
 
-    // First, we declare two variables:
-    // One which remove all characters in the string that aren't x's...
-    var strX = str.replace(/[^x]/g, "");
-
-    // ...and and the second which removes all characters that aren't o's
-    var strO = str.replace(/[^o]/g, "");
-
-    // Next, we get the length of each of these new variables to determine how many x's and o's are in the string...
-    var xNumber = strX.length;
-    var oNumber = strO.length;
-
-    // ...and return the truth value of comparing the two.
-    return xNumber === oNumber;
+    if(letterX === letterO){
+        return true;
+    }
+    else{
+        return false;
+    }
 }
 
-// Best Practices
-function ExOh(str) {
+ExOh("xxxooo");
 
-    return str.replace(/[^x]/g, "").length === str.replace(/[^o]/g, "").length;
+
+
+
+
+
+function ExOh(str) {
+    var letterX = str.split("x").join("");
+    var letterO = str.split("o").join("");
+
+    if(letterX.length === letterO.length){
+        return true;
+    }
+    else{
+        return false;
+    }
 }
+
+ExOh("xxxooo");
+
+
+//return true if there is an even amount of xs and otherwise
+// return false if not 
