@@ -1,23 +1,9 @@
-function ArrayAdditionI(arr) { 
-  var arr = arr.sort(function(a,b){return a-b});
-  var largest = arr.pop();
-  var result = false;
-
-  var onePerm = function(sum, i) {
-  	sum = sum || 0;
-  	i = i || 0;
-  	
-    if (sum === largest) {
-      result = true;
-      return;
-    }
-    for (; i < arr.length; i++) {
-    	sum += arr[i];
-      onePerm(sum, i+1);
-      sum -= arr[i];
-    }
-  };
-  
-  onePerm();      
-  return result;
-}
+Using the JavaScript language, have the function ArrayAdditionI(arr) 
+take the array of numbers stored in arr and return 
+the string true if any combination of numbers in the 
+array can be added up to equal the largest number in the array, 
+otherwise return the string false. 
+For example: if arr contains [4, 6, 23, 10, 1, 3] 
+the output should return true because 4 + 6 + 10 + 3 = 23. 
+The array will not be empty, will not contain all the same elements, 
+and may contain negative numbers. 
