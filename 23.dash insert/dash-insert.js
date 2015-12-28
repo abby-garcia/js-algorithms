@@ -6,14 +6,13 @@
 
 
 function DashInsert(str){
-	var splitStr = str.split("");
-	var even = splitStr[i] % 2 === 0;
-	var odd = splitStr[i] % 2 !== 0
+	str = str.toString();
+	var answer = 0;
 
 
 
 	for(var i = 0; i < str.lenght; i++){
-		if
+		if(i > 0)
 
 
 
