@@ -10,6 +10,7 @@
 
 function LetterCountI(str){
     var splitString = str.split(" ");
+    var answer = "";
 
     for(var i = 0; i < splitString.length; i++){
 
