@@ -20,4 +20,4 @@ function CountingMinutesI(str){
 
 CountingMinutesI(str);
 
-//whenever a time in 
+//count the minutes betwen the hours

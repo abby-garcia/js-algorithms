@@ -10,7 +10,7 @@
 
 function MeanMode(arr){
 
-	
+	var mean = 
 
 }
 
