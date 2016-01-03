@@ -16,7 +16,12 @@
  function ThirdGreatest(strArr){
  	strArr = strArr.toSplit("");
 
- 	for(var i = 0; )
+ 	for(var i = 0; i < strArr.length; i++){
+
+ 		if(str[0])
+
+
+ 	}
 
 
  }
@@ -27,6 +32,7 @@
  //use for loop to go thru each word in the array
  //count the last largest word. 
  //count each letter in the array
+ //is this a double for loop?
 
  //split it 
  //
