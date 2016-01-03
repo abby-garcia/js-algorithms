@@ -13,21 +13,17 @@
 //  only contain letters. 
 
 
- function ThirdGreatest(strArr){
- 	strArr = strArr.toSplit("");
 
- 	for(var i = 0; i < strArr.length; i++){
+function ThirdGreatest(strArr) { 
 
- 		if(str[0])
+  strArr = strArr.sort(function (a, b) {return b.length - a.length});
+  return strArr[2]; 
 
+}
 
- 	}
+  
+         
 
-
- }
-
-
- ThirdGreatest(strArr);
 
  //use for loop to go thru each word in the array
  //count the last largest word. 
