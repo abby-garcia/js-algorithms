@@ -6,31 +6,18 @@
 
 
 function DashInsert(str){
-	str = str.toString();
-	var answer = 0;
-
-
-
+	str = str.split("");
 	for(var i = 0; i < str.lenght; i++){
-		if(i > 0)
-
-
+		if(str[i - 1] % 2 !== 0 &&  str[i + 1] % 2 !== 0 ){
+			str[i] = str[i]+ "-";
+		}
 
 	}
-
-
-
 
 }
 
 
+DashInsert("454793");
 
-
-DashInsert(str);
-
-//add dashes between two odd numers in a str. 
-// do a for loop. if there is a odd number befor or after 
-//a number in the middle, put a dash
-
-//if the number can NOT be divided by 2, it's odd 
-//split it up 
+// you can ask if the left or right side is dividable by 2, skip it. 
+// if the left AND right have a reminder, then you str[i] 
