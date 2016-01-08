@@ -6,25 +6,42 @@ For example: if num is 16 the output should be 53 as 53 is the 16th prime number
 
 
 function PrimeMover(num) {
-	var primes = 0;
+	var place = 0;
+	for(var i = 1; i < 10000; i++){
+		if(num % i === 0){
+			continue;
+		}
+		else{
+			place++;
+		}
 
-	for(var i = 2; i < 10000;i++){
 
-		
 	}
 
-	if(num === 1){
-		continue;
-	}
-
-
-
-
-
-}
 
 
 PrimeMover(num);
 
 //when it is a prime number, brint up the counter
-//you have to say
+//how do you tell the computer that it is a prime number?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

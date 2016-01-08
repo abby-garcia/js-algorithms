@@ -6,13 +6,15 @@
 
 
 function DashInsert(str){
-	str = str.split("");
-	for(var i = 0; i < str.lenght; i++){
-		if(str[i - 1] % 2 !== 0 &&  str[i + 1] % 2 !== 0 ){
-			str[i] = str[i]+ "-";
+	var newStr = str.split("");
+	for(var i = 0; i < str.lenght - 1; i++){
+		if(newStr[i] % 2 !== 0 &&  newStr[i + 1] % 2 !== 0 ){
+			newStr[i] = newStr[i]+ "-";
 		}
 
 	}
+
+	return newStr.join("");
 
 }
 
