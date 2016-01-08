@@ -9,6 +9,15 @@
 // not be empty and will have at least one letter. 
 
 
+// you have to do a for loop to go thru the string 
+//then you have to figure out what is next to it and the right of it 
+// i -1  & i + 1
+
+
+
+
+
+
 function SimpleSymbols(str) {
     for(var i = 0; i < str.length; i++){
         if(str[i + 1] !== "+" || str[i - 1] !== "+"){
@@ -22,7 +31,3 @@ function SimpleSymbols(str) {
 
 
 SimpleSymbols("++d+===+c++==+a+");
-
-// you have to do a for loop to go thru the string 
-//then you have to figure out what is next to it and the right of it 
-// i -1  & i + 1

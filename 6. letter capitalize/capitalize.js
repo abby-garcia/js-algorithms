@@ -18,3 +18,5 @@ function LetterCapitalize(str){
 }
 
 LetterCapitalize("star wars should be a good movie");
+
+//line 12 - take the first letter of the word
