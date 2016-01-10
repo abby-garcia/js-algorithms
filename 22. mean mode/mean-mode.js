@@ -1,3 +1,4 @@
+
 // Using the JavaScript language, 
 // have the function MeanMode(arr) take the array of 
 // numbers stored in arr and return 1 if the mode 
